@@ -6,7 +6,7 @@
 
 **Download Page**: https://archlinux.org/download/
 
-https://github.com/user-attachments/assets/63b4dbb9-7750-4759-b9ea-dc0cefdd2da7
+[Download ISO & Checksum File](https://github.com/user-attachments/assets/63b4dbb9-7750-4759-b9ea-dc0cefdd2da7)
 
 2. Check ISO integrity
 
