@@ -27,8 +27,8 @@
     ...
     ```
 
-    > [!NOTE]
-    > Here my USB is /dev/sdb
+> [!NOTE]
+> Here my USB is /dev/sdb
 
   - Flash it
 
