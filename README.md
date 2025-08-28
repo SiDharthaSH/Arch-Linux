@@ -2,7 +2,7 @@
 
 This repository provides the necessary configuration files and instructions for setting up a basic Arch Linux system manually.
 
-https://raw.githubusercontent.com/SiDharthaSH/Arch-Linux/main/Media/Showcase.mkv
+https://github.com/user-attachments/assets/f792a7ec-9574-4f81-8391-8424c9cfecac
 
 ## Key Features
 
