@@ -6,8 +6,8 @@
 
 **Download Page**: https://archlinux.org/download/
 
-[Download ISO File and Sha256sums.txt](https://github.com/user-attachments/assets/63b4dbb9-7750-4759-b9ea-dc0cefdd2da7)
+https://github.com/user-attachments/assets/63b4dbb9-7750-4759-b9ea-dc0cefdd2da7
 
 2. Check ISO integrity
 
-[Check Sha256sum](media/sha256sum-check.png)
+![Check Sha256sum](media/sha256sum-check.png)
