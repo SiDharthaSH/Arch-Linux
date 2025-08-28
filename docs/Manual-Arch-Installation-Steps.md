@@ -16,6 +16,7 @@
 
   - Plug in and Find your USB
     ```
+
     ❯ sudo fdisk -l
     Disk /dev/sda: 238.47 GiB, 256060514304 bytes, 500118192 sectors
     Disk model: SM200 2.5 INCH S
@@ -26,14 +27,15 @@
     ...
     ```
 
-  > [!NOTE]
-  > Here my USB is /dev/sdb
+    > [!NOTE]
+    > Here my USB is /dev/sdb
 
   - Flash it
-  ```
-  ~$ sudo dd if=archlinux-x86_64.iso of=/dev/sdb bs=4M oflag=direct conv=fsync status=progress
-  1333788672 bytes (1.3 GB, 1.2 GiB) copied, 6 s, 218 MB/s
-  328+1 records in
-  328+1 records out
-  1378795520 bytes (1.4 GB, 1.3 GiB) copied, 7.2245 s, 191 MB/s
-  ```
+
+    ```
+    ~$ sudo dd if=archlinux-x86_64.iso of=/dev/sdb bs=4M oflag=direct conv=fsync status=progress
+    1333788672 bytes (1.3 GB, 1.2 GiB) copied, 6 s, 218 MB/s
+    328+1 records in
+    328+1 records out
+    1378795520 bytes (1.4 GB, 1.3 GiB) copied, 7.2245 s, 191 MB/s
+    ```
