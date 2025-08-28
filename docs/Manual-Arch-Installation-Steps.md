@@ -15,8 +15,8 @@
 3. Create a Bootable USB, you can use [balenaEtcher](https://etcher.balena.io/)
 
   - Plug in and Find your USB
-    ```
 
+    ```
     ❯ sudo fdisk -l
     Disk /dev/sda: 238.47 GiB, 256060514304 bytes, 500118192 sectors
     Disk model: SM200 2.5 INCH S
