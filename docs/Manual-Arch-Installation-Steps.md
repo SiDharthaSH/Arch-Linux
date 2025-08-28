@@ -2,4 +2,12 @@
 
 ## Creating a Bootable USB
 
-1. Download latest Arch Linux ISO file from a closest mirror: https://archlinux.org/download/
+1. Download latest Arch Linux ISO file and checksum file like Sha256sums.txt from a closer mirror
+
+**Download Page**: https://archlinux.org/download/
+
+[Download ISO File and Sha256sums.txt](https://github.com/user-attachments/assets/63b4dbb9-7750-4759-b9ea-dc0cefdd2da7)
+
+2. Check ISO integrity
+
+[Check Sha256sum](media/sha256sum-check.png)
