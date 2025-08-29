@@ -102,6 +102,7 @@
 > The lower the packet loss the better
 
 5. use `reflector` to choose the fastest mirrors
+
    ```
    reflector -c India --sort rate --save /etc/pacman.d/mirrorlist --verbose
    ```
@@ -110,11 +111,11 @@
 > Replace `India` with your country name
 
 6. Install `archlinux-keyring` which is a crucial package in Arch Linux that provides the PGP keys used by pacman to verify the authenticity and integrity of packages.
-  ```
 
+  ```
   pacman -Syy archlinux-keyring
   archlinux-keyring-wkd-sync
-
   ```
+
 > [!NOTE]
 > This command takes some serious time so be patient
