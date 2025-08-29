@@ -44,7 +44,8 @@
 
 1. Restart your laptop or computer into `One Time Boot Mode`. For me, this means using the `F12` key during bootup and choosing the Bootable USB. Alternatively, you can use the `F2` key to boot into BIOS settings and alter the boot sequence.
 
-2. Select `Arch Linux install medium (x86_64, UEFI)`
+2. Select `Arch Linux install medium (x86_64, UEFI)` and wait till you see this
+  [tty](media/TTY-after-boot.png)
 
 3. If you are not using an Ethernet cable, setup your Wi-Fi like this
   ```
