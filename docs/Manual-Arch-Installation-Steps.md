@@ -123,6 +123,7 @@
 7. Use `parted` to create partitions
 
   **Partition Layout**: https://wiki.archlinux.org/title/Installation_guide#Example_layouts
+
   **Partition Type Wiki**: https://en.wikipedia.org/wiki/GUID_Partition_Table#Partition_type_GUIDs
 
 > [!NOTE]
