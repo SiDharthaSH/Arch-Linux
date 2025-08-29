@@ -39,3 +39,7 @@
     328+1 records out
     1378795520 bytes (1.4 GB, 1.3 GiB) copied, 7.2245 s, 191 MB/s
     ```
+
+## Boot and Install
+
+1. Restart your laptop or computer into `One Time Boot Mode`. For me, this means using the `F12` key during bootup and choosing the Bootable USB. Alternatively, you can use the `F2` key to boot into BIOS settings and alter the boot sequence.
