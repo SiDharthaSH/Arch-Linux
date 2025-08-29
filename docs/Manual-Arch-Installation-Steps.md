@@ -45,9 +45,11 @@
 1. Restart your laptop or computer into `One Time Boot Mode`. For me, this means using the `F12` key during bootup and choosing the Bootable USB. Alternatively, you can use the `F2` key to boot into BIOS settings and alter the boot sequence.
 
 2. Select `Arch Linux install medium (x86_64, UEFI)` and wait till you see this
-  ![TTY](media/TTY-after-boot.png)
+
+  ![TTY after boot](media/TTY-after-boot.png)
 
 3. If you are not using an Ethernet cable, setup your Wi-Fi like this
+
   ```
   ~$ iwctl
   NetworkConfigurationEnabled: disabled
@@ -70,15 +72,19 @@
     >   Redmi 12 5G                       psk                 ****    
         Anshuman                          psk                 ****    
   ```
+
 > [!NOTE]
 > Here my Wi-Fi is `Redmi 12 5G`
+
   ```
   [iwd]# station wlan0 connect "Redmi 12 5G" 
   Type the network passphrase for Redmi 12 5G psk.                                
   Passphrase: ********                                                            
   [iwd]# exit 
   ```
+
 4. Check if you are connected to internet
+
   ```
   ~$ ping -c 3 google.com
   PING google.com (2404:6800:4002:813::200e) 56 data bytes
@@ -91,5 +97,26 @@
   rtt min/avg/max/mdev = 66.380/78.165/92.365/10.744 ms
   ~$
   ```
+
 > [!NOTE]
 > The lower the packet loss the better
+
+5. use `reflector` to choose the fastest mirrors
+
+  ```
+  reflector -c India --sort rate --save /etc/pacman.d/mirrorlist --verbose
+  ```
+
+> [!NOTE]
+> Replace `India` with your country name
+
+6. Install `archlinux-keyring` which is a crucial package in Arch Linux that provides the PGP keys used by pacman to verify the authenticity and integrity of packages.
+
+  ```
+  pacman -Syy archlinux-keyring
+  archlinux-keyring-wkd-sync
+  ```
+
+> [!NOTE]
+> This command takes some serious time so be patient
+
