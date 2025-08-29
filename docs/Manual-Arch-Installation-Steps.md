@@ -122,9 +122,42 @@
 
 7. Use `parted` to create partitions
 
+  **Partition Layout**: https://wiki.archlinux.org/title/Installation_guide#Example_layouts
+  **Partition Type Wiki**: https://en.wikipedia.org/wiki/GUID_Partition_Table#Partition_type_GUIDs
+
 > [!NOTE]
 > For me the drive I will be installing in is `/dev/sda` ([How to find drive](#Find-Drive))
 
-```
-~$ parted /dev/sda
-```
+  ```
+  ~$ parted /dev/sda
+  ...
+  (parted) mktable gpt 
+  (parted) mkpart "EFI System Partition" fat32 1MiB 513MiB
+  (parted) set 1 esp on
+  (parted) mkpart "Root Partition" ext4 513MiB -8GiB
+  (parted) type 2 4F68BCE3-E8CD-4DB1-96E7-FBCAF984B709
+  (parted) mkpart "Swap Partition" linux-swap -8GiB 100%
+  (parted) type 3 0657FD6D-A4AB-43C4-84E5-0933C84B4F4F 
+  (parted) quit
+  ```
+
+8. Format the partitions
+
+  ```
+  ~$ mkfs.fat -F32 /dev/sda1 
+  ~$ mkfs.ext4 /dev/sda2
+  ~$ mkswap /dev/sda3
+  ```
+
+9. Mount the file systems
+
+  ```
+  ~$ mount /dev/sda2 /mnt
+  ~$ mount --mkdir /dev/sda1 /mnt/boot
+  ```
+
+10. Enable Swap
+
+  ```
+  ~$ swapon /dev/sda3
+  ```
