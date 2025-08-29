@@ -103,9 +103,9 @@
 
 5. use `reflector` to choose the fastest mirrors
 
-   ```
-   reflector -c India --sort rate --save /etc/pacman.d/mirrorlist --verbose
-   ```
+  ```
+  reflector -c India --sort rate --save /etc/pacman.d/mirrorlist --verbose
+  ```
 
 > [!NOTE]
 > Replace `India` with your country name
