@@ -14,7 +14,7 @@
 
 3. Create a Bootable USB, you can use [balenaEtcher](https://etcher.balena.io/)
 
-  - Plug in and Find your USB
+  - Plug in and Find your USB <a name="Find-Drive"/>
 
     ```
     ❯ sudo fdisk -l
@@ -119,3 +119,12 @@
 
 > [!NOTE]
 > This command takes some serious time so be patient
+
+7. Use `parted` to create partitions
+
+> [!NOTE]
+> For me the drive I will be installing in is `/dev/sda` ([How to find drive](#Find-Drive))
+
+```
+~$ parted /dev/sda
+```
