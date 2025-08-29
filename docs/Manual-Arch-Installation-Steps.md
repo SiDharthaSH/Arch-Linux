@@ -43,3 +43,52 @@
 ## Boot and Install
 
 1. Restart your laptop or computer into `One Time Boot Mode`. For me, this means using the `F12` key during bootup and choosing the Bootable USB. Alternatively, you can use the `F2` key to boot into BIOS settings and alter the boot sequence.
+
+2. Select `Arch Linux install medium (x86_64, UEFI)`
+
+3. If you are not using an Ethernet cable, setup your Wi-Fi like this
+  ```
+  ~$ iwctl
+  NetworkConfigurationEnabled: disabled
+  StateDirectory: /var/lib/iwd
+  Version: 3.9
+  [iwd]# device list 
+                                      Devices                                    
+  --------------------------------------------------------------------------------
+    Name                  Address               Powered     Adapter     Mode      
+  --------------------------------------------------------------------------------
+    wlan0                 ba:f4:8a:c8:9c:28     on          phy0        station     
+
+  [iwd]# device wlan0 set-property Powered on 
+  [iwd]# station wlan0 scan 
+  [iwd]# station wlan0 get-networks 
+                                Available networks                             *
+  --------------------------------------------------------------------------------
+        Network name                      Security            Signal
+  --------------------------------------------------------------------------------
+    >   Redmi 12 5G                       psk                 ****    
+        Anshuman                          psk                 ****    
+  ```
+> [!NOTE]
+> Here my Wi-Fi is `Redmi 12 5G`
+  ```
+  [iwd]# station wlan0 connect "Redmi 12 5G" 
+  Type the network passphrase for Redmi 12 5G psk.                                
+  Passphrase: ********                                                            
+  [iwd]# exit 
+  ```
+4. Check if you are connected to internet
+  ```
+  ~$ ping -c 3 google.com
+  PING google.com (2404:6800:4002:813::200e) 56 data bytes
+  64 bytes from del11s08-in-x0e.1e100.net (2404:6800:4002:813::200e): icmp_seq=1 ttl=116 time=66.4 ms
+  64 bytes from del11s08-in-x0e.1e100.net (2404:6800:4002:813::200e): icmp_seq=2 ttl=116 time=75.8 ms
+  64 bytes from del11s08-in-x0e.1e100.net (2404:6800:4002:813::200e): icmp_seq=3 ttl=116 time=92.4 ms
+
+  --- google.com ping statistics ---
+  3 packets transmitted, 3 received, 0% packet loss, time 2002ms
+  rtt min/avg/max/mdev = 66.380/78.165/92.365/10.744 ms
+  ~$
+  ```
+> [!NOTE]
+> The lower the packet loss the better
