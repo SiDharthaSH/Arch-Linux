@@ -13,7 +13,7 @@ This repository provides the necessary configuration files and instructions for 
 
 ## Manual Installation Steps & Configuration Files
 
-> [!NOTE]
+> [!WARNING]
 > This is for a x86_64 UEFI systems
 
 Go to [Doc Section](./docs/README.md) for installation guide and configuration files. 
