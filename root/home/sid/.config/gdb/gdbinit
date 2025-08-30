@@ -1,0 +1,3 @@
+# do not download debug symbols for stripped binaries
+# i.e. the ones provided by ditros compiled without -g
+set debuginfod enabled off

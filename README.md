@@ -13,4 +13,4 @@ This repository provides the necessary configuration files and instructions for 
 
 ## Installation
 
-Go to [Doc](docs/Manual-Arch-Installation-Steps.md) if you like to install Arch Linux by hand, as I do.
+Go to [Doc](./docs/README-Arch-Installation-and-Configuration.md) if you like to install Arch Linux by hand, as I do.

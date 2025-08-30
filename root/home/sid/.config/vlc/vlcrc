@@ -1,0 +1,7 @@
+﻿[qt] # Qt interface
+qt-privacy-ask=0
+[adjust] # Image properties filter
+saturation=1.5
+[core] # core program
+video-filter=adjust
+metadata-network-access=1
