@@ -342,7 +342,7 @@
 
 ## Configuration
 
-Configure your environment with appropriate config files, I have stored my config in a tree structure style so that it's easy to understand which location they belong to.
+Configure your environment with appropriate config files, I have stored my config in a tree structure style at [root folder](./../root/) so that it's easy to understand which location they belong to.
 
   ```
   root
