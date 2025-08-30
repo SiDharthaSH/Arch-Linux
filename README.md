@@ -11,6 +11,6 @@ This repository provides the necessary configuration files and instructions for 
 - **Cozy Superuser Environment**: [Kitty](https://sw.kovidgoyal.net/kitty/), [Tmux](https://github.com/tmux/tmux/wiki), [Bash with Starship](https://starship.rs/) and [Neovim](https://neovim.io/) with [LazyVim](www.lazyvim.org)
 - **and Some Firefox Plugin Recommendation**
 
-## Installation
+## Manual Installation Steps & Configuration Files
 
-Go to [Doc](./docs/README-Arch-Installation-and-Configuration.md) if you like to install Arch Linux by hand, as I do.
+Go to [Doc Section](./docs/README.md) for installation guide and configuration files. 
